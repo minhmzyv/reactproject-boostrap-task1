@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* @media (max-width : 768px){
+
+} */
+
+.row {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.sideBar .col-sm-2 {
+  height: 210vh;
+}
+
+.sideBar .col-sm-10 {
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.sideBar .col-sm-2 .faceIcon {
+  transform: rotate(340deg);
+
+}
+
+.interfaceText {
+  font-size: 12px;
+
+}
+
+.ComponentsIcon {
+  position: relative;
+}
+
+.arrowIcon {
+  position: absolute;
+  right: 0;
+}
+
+
+.colorGray {
+  color: #9c99996e;
+}
+
+.colorLight {
+  color: rgba(245, 245, 245, 0.678);
+}
+
+.leftArrow {
+  background-color: #4b99ffbd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.leftArrow:hover {
+  background-color: #4b99ffde;
+  cursor: pointer;
+}
+
+.SBAdminPro {
+  width: 100%;
+  height: auto;
+  background-color: #0757beb0;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 8px;
+}
+
+nav form .btn {
+  background-color: #244dc9;
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+nav form .btn:hover {
+  background-color: #1338a8;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav form input {
+  background-color: whitesmoke !important;
+  width: 450px !important;
+  border: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideBar .col-sm-10 .navRow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.UserInterFace {
+  position: relative;
+}
+
+.UserInterFace::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  background-color: #9c99996e;
+  position: absolute;
+}
+
+.Notifications i {
+  position: relative;
+  font-size: 20px;
+}
+
+.badge {
+  position: absolute;
+  font-size: 7px;
+  top: 0;
+  right: -10px;
+}
+
+.borderLeftPrimary {
+  border-left: 3px solid #4e73df;
+}
+
+.borderLeftSucces {
+  border-left: 3px solid #1cc88a;
+}
+
+.borderLeftBlue {
+  border-left: 3px solid #36b9cc;
+}
+
+.borderLeftOrange {
+  border-left: 3px solid #f6c23e;
+}
+
+.DashboardCards .col-sm-3 {
+  background-color: white;
+  height: auto;
+  margin: 0 25px;
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 8px;
 }
